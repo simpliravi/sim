@@ -3,7 +3,7 @@ node{
 git 'https://github.com/Autamation/sim.git'
 }
 }
-stage('Compile-Package){
+stage('Compile-Package'){
  sh 'mvn package'
 }
 }
