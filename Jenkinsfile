@@ -3,7 +3,7 @@ node{
 git 'https://github.com/Autamation/sim.git'
 }
 stage('Compile-Package'){
-   def mvnHome = tool name: 'M2-HONE', type: 'maven'
+   def mvnHome = tool name: 'maven3', type: 'maven'
       bat "${mvnHome}/bin/mvn package"
  bat 'mvn package'
 }
